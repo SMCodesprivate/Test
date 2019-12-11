@@ -2,7 +2,7 @@ import api from '../services/api.js';
 async function verify_login() {
     var x = true;
     var user = JSON.parse(localStorage.getItem('user_infos'));
-    if(user === null) {
+    if(user === null || !user) {
         x = false;
     } else {
         var infos = await api.post("/is", { username: user.username });

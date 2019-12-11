@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Solway:300,400,500,700,800&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+#copy {
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+#copy > p {
+    line-height: 85px;
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(255, 242, 227);
+    position: relative;
+    left: 15px;
+    font-family: 'Solway', serif;
+}
+#copy > img {
+    float: left;
+    width: 95px;
+}

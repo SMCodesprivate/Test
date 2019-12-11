@@ -6,6 +6,7 @@ import Main from './pages/Main/';
 import Dashboard from './pages/Dashboard/';
 import Curses from './pages/Curses/';
 import NewCurse from './pages/NewCurse/';
+import Perfil from './pages/Perfil/';
 
 export default function Routes() {
     return (
@@ -16,6 +17,7 @@ export default function Routes() {
                 <Route path="/dashboard" component={Dashboard} />
                 <Route path="/curses" component={Curses} />
                 <Route path="/newcurse" component={NewCurse} />
+                <Route path="/perfil" component={Perfil} />
             </Switch>
         </BrowserRouter>
     );

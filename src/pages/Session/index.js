@@ -43,10 +43,10 @@ export default function Register({ history }) {
         } else {
             var teste = await api.post("/verificar", { username, password: senha });
             if(teste.data.state !== true) return alert("Você digitou a senha errada dessa conta.");
+            console.log(verification.data.returno);
             localStorage.setItem("user_infos", JSON.stringify({ username: verification.data.returno.username, user_id: verification.data.returno._id, password: verification.data.returno.password }));
             window.location.href = base_url+'/dashboard';
         }
-        // window.location.href = base_url+'/dashboard';
     }
     return (
         <div id="blockCorp">

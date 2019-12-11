@@ -74,7 +74,7 @@ export default function Dashboard() {
                 <div id="proceed" onClick={changeRegress}>
                     <img src={vara_e} alt='<' />
                 </div>
-                <a id="fundoLink">
+                <a id="fundoLink" href={base_url}>
                     <img id="fundo" className="transition-right" alt="0"/>
                 </a>
                 <div id="regress" onClick={changeProceed}>
