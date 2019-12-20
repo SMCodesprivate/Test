@@ -8,3 +8,27 @@
     margin-top: 140px;
     border-radius: 4px;
 }
+#title {
+    text-align: center;
+    font-size: 50px;
+    color: #ffe1be;
+}
+#foto > div {
+    height: 400px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 150px;
+    border: 4px dashed #858585;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+    cursor: pointer;
+}
+#foto > div > img {
+    height: 400px;
+    width: 50%;
+    margin-left: 25%;
+}
+#foto > input {
+    display: none;
+}

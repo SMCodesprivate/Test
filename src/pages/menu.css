@@ -13,20 +13,6 @@
     background-color: #336699;
     box-shadow: 0px 3px 0px #333399;
 }
-#menu > img {
-    transition: .6s all linear;
-    display: block;
-    position: relative;
-    top: 8px;
-    width: 9%;
-    border-radius: 40%;
-    float: left;
-    margin-left: 45.5%;
-    cursor: pointer;
-}
-#menu > img:hover {
-    border-radius: 5%;
-}
 #listMenu {
     float: right;
     height: 75px;
@@ -105,16 +91,21 @@
     text-align: center;
     padding-bottom: 25px;
 }
-#menuCell > img {
+#labelChangeImageCell > div > img {
     transition: .5s all linear;
     border-radius: 50%;
     width: 150px;
-    margin-top: 25px;
+    left: 42%;
+    position: relative;
+    top: 20px;
     cursor: pointer;
-    margin-bottom: 25px;
+    margin-bottom: 65px;
 }
-#menuCell > img:hover {
+#labelChangeImageCell > div > img:hover {
     border-radius: 5%;
+}
+#labelChangeImageCell > form > input {
+    display: none;
 }
 #listMenuCell {
     transition: .5s all linear;
@@ -127,6 +118,7 @@
     font-size: 36px;
     padding-bottom: 20px;
     padding-top: 20px;
+    list-style: none;
     font-weight: 800;
     color: #ffd9d9;
     font-family: 'Solway', serif;
@@ -141,4 +133,26 @@
     #menu {
         display: none;
     }
+}
+#labelChangeImage > form > input {
+    display: none;
+}
+#sumirMenuSelect {
+    display: none;
+}
+.divDentro {
+    position: relative;
+    top: 10px;
+    width: 55%;
+    float: left;
+}
+.divDentro img {
+    margin-left: auto;
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    transition: 0.7s all linear;
+}
+.divDentro img:hover {
+    border-radius: 20%;
 }

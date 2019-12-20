@@ -37,8 +37,9 @@ export default function Register({ history }) {
         var verification = await api.post("/is", { username: username });
         if(verification.data.error === true) {
             verification = await api.post("/register", { username: username, password: senha });
-            localStorage.setItem("user_infos", JSON.stringify({ username: verification.username, user_id: verification._id, password: verification.password }));
-            window.location.href = base_url+'/dashboard';
+            // localStorage.setItem("user_infos", JSON.stringify({ username: verification.username, user_id: verification._id, password: verification.password }));
+            window.alert("Sua conta foi registrada\nClique novamente para acessar");
+            // window.location.href = base_url+'/dashboard';
             return;
         } else {
             var teste = await api.post("/verificar", { username, password: senha });

@@ -28,4 +28,13 @@ async function verify_staff() {
     }
     return x;
 }
-export { verify_staff, verify_login };
+async function getUser() {
+    const user = JSON.parse(localStorage.getItem("user_infos"));
+    return user;
+}
+async function getImage() {
+    var user = await getUser();
+    var userInfos = await api.post('/searchuser', { user_id: user.user_id });
+    return userInfos.data.image;
+}
+export { verify_staff, verify_login, getUser, getImage };

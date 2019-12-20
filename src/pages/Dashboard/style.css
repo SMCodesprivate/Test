@@ -125,19 +125,6 @@ body {
     color: #999;
     font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-#rodape {
-    background: #000010;
-    width: 100%;
-    margin-top: 300px;
-    text-align: center;
-    bottom: 0;
-}
-
-#rodape > img {
-    width: 128px;
-    bottom: 0;
-    margin-bottom: 0;
-}
 
 ::-webkit-scrollbar-track {
     width: 5px;

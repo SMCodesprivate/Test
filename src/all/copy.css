@@ -2,13 +2,14 @@
 #copy {
     position: relative;
     top: 50px;
+    left: 20px;
     width: 100%;
 }
 #copy > p {
     line-height: 85px;
     font-size: 24px;
     font-weight: 800;
-    color: rgb(255, 242, 227);
+    color: #1e0e2c;
     position: relative;
     left: 15px;
     font-family: 'Solway', serif;

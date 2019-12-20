@@ -4,10 +4,10 @@ import '../menu';
 import vara_e from './vara-e.png';
 import vara_d from './vara-d.png';
 import api from '../../services/api';
-import logo from './logo.png';
 import Menu from '../menu.js';
 import dashboardFunctions from './functions';
 import base_url from '../infos';
+import Rodape from '../../all/rodape';
 
 export default function Dashboard() {
     var corpo = document.querySelector("#corpo");
@@ -93,9 +93,7 @@ export default function Dashboard() {
                     </h1>
                 </div>
             </div>
-            <div id="rodape">
-                <img src={logo} alt="Icone" />
-            </div>
+            <Rodape />
         </div>
     );
 }
